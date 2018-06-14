@@ -1,0 +1,76 @@
+.empresa-cad-form{
+    background-color: #263238;
+    color:white;
+    height:170px;
+}
+
+.cad-input{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height:11em;
+
+}
+.cad-dados-icone{
+    font-size:60px;
+}
+#cad-icon-titulo{
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    height: 10em;
+    width:270px;
+
+}
+
+.bairro{
+    display:flex;
+}
+
+.dados-span-input{
+
+    background-color: white;
+}
+
+
+
+.parceria-campo{
+border:0.1px solid orangered;
+}
+
+.icon-color{
+    color:#263238;
+}
+
+.dados-conta{
+    margin-top: 30px;
+}
+
+.icon-size{
+    font-size:40px;
+}
+.cd-config{
+    display: flex;
+    justify-content: space-between;
+}
+.cd-config>div{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    border:0.09px solid grey;
+    height: 10em;
+}
+
+.parcerias-area:hover{
+    transform: scale(1.03);
+
+}
+.parcerias-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:orangered;
+    height:30em;
+}
+
