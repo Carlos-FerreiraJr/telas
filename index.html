@@ -1,122 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>modal</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
+    <title>modal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container empresa-cad-form">
-    <div class="row">
-        <!-- div de cadastro -->
-        <div class=" col-sm-3 col-xs-4 col-md-3 col-lg-3">
-            <div id="cad-icon-titulo">
+    <!-- parte de cadastro de empresas -->
+    <section class="container empresa-cad-form">
+        <section class="row">
+            <div class="col-md-3 col-lg-3">
+                <div id="cad-icon-titulo">
                     <i class="far fa-id-card cad-dados-icone"></i>
                     <h3>Dados <b>Cadastrais</b></h3>
+                </div>
             </div>
-           
-        </div>
-        <!-- fim da div de cadastro -->
-        <!-- div de cadastro -->
-        <div class="cad-input col-sm-3 col-xs-1 col-md-4 col-lg-4">
-            <div class="input-group input-group-sm ">
-                <span class="input-group-addon dados-span-input">Razão Social</span>
-                <input type="text" class="form-control"  >
-            </div>
-            <div class="input-group input-group-sm">
-                <span class="input-group-addon dados-span-input" >CNPJ</span>
-                <input type="text" class="form-control"  >
-            </div>
-            <div class="input-group input-group-sm">
-                <span class="input-group-addon dados-span-input" >Representante</span>
-                <input type="text" class="form-control"  >
-            </div>
-            <div class="input-group input-group-sm">
-                <span class="input-group-addon dados-span-input" >E-mail</span>
-                <input type="text" class="form-control" >
-            </div>
-        </div>
-        <!-- fim di de cadstro -->
-        <!-- cadastro2 -->
-        <div class="cad-input col-sm-3 col-xs-2 col-md-3 col-lg-4">
-            <div class="input-group  input-group-sm">
-                <span class="input-group-addon dados-span-input" >Endereço</span>
-                <input type="text" class="form-control" >
-            </div>
-            <!--div de bairro -->
-            <div class="bairro ">
-                <div class="input-group input-group-xs ">
-                    <span class="input-group-addon dados-span-input" >Bairro</span>
+            <section class=" col-md-4 col-lg-4 cad-input">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-addon dados-span-input">Razão Social</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon dados-span-input" >CNPJ</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon dados-span-input" >Representante</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group input-group-sm  email-input ">
+                    <span class="input-group-addon dados-span-input" >E-mail</span>
+                    <input type="text" class="form-control">
+                </div>
+            </section>
+            <section class="col-md-4 col-lg-4 cad-input"> 
+                <div class="input-group  input-group-sm">
+                    <span class="input-group-addon dados-span-input" >Endereço</span>
+                    <input type="text" class="form-control" >
+                </div> 
+                <section class="bairro">
+                    <div class="input-group bairro-input1 input-group-xs">
+                        <span class="input-group-addon dados-span-input" >Bairro</span>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="input-group bairro-input2">
+                        <input placeholder="cidade" type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                    <div class="input-group bairro-input2">
+                        <input placeholder="UF" type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                    
+                </section>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon dados-span-input" >CEP</span>
                     <input type="text" class="form-control" >
                 </div>
-                
-            </div>
-            <!-- fim da div de bairro -->
-            <div class="input-group input-group-sm">
-                <span class="input-group-addon dados-span-input" >CEP</span>
-                <input type="text" class="form-control" >
-            </div>
-            <div class="input-group input-group-sm">
-                <span class="input-group-addon dados-span-input" >TEL</span>
-                <input type="text" class="form-control"  >
-            </div>
-        </div>
-        <!-- fim cadastro2 -->
-    </div>
-    <!-- fim da linha -->
-</div>
-
-<div class="container dados-conta">
-    <!-- linha2 -->
-    <div class="row">
-        <!-- coluna1 -->
-        <div class="col-md-8">
-            <!-- inicio dos cards -->
-            <div class="cd-config text-uppercase">  
-                <div class="col-xs-6 col-md-4">
-                    <a  class="icon-color" href="#">
-                        <i class="icon-size far fa-credit-card"></i>
-                        <p> Meus <b>creditos</b>
-                        </a>      
-                    </div> 
-                    <div class="col-xs-6 col-md-4">
-                        <a class="icon-color" href="#" >
-                            <i class=" icon-size fas fa-barcode"></i>
-                            <p> Segunda <b>via Boleto</b></p>
-                        </a>    
+                <div class="input-group input-group-sm tel-input">
+                    <span class="input-group-addon dados-span-input" >TEL</span>
+                    <input type="text" class="form-control">
+                </div> 
+            </section>
+        </section>
+    </section>
+    <!-- fim do cadastro de empresas -->
+    
+    
+    
+    
+    
+    
+    
+    <!-- inicio de dados-conta -->
+    <section class="container conta-dados">
+        <section class="row">
+            <section class="col-md-8 col-lg-8">
+                <!-- cards -->
+                <section class="col-md-12 conta-dados-info">
+                    <div class="thumbnail thumb-credito">
+                        <i class="icon-size far fa-credit-card" class="img-barcode"></i>
+                        <p> Meus <b>creditos</b></p>
                     </div>
-                    <div class="col-xs-6 col-md-4">
-                        <a class="icon-color" href="#">
-                            <i class=" icon-size fas fa-box"></i>
-                            <p>Status <b>da entrega</b></p>
-                        </a>   
-                    </div> 
-                    <!-- fim do card config -->
-                </div>
-                <!-- fim dos cards -->
-                <!-- inicio dos pedidos parte -->
-                <div class="col-md-12 entregas-dados">
-                    <h3>Meus Pedidos</h3>
-                    <div class="table-responsive">
-                        <table class="table tablee table-striped  table-bordered text-uppercase">
-                            <thead>
-                                <!-- <tr>
-                                    <td class="tablee"><h3>meus pedidos</h3></td>
-                                </tr> -->
-                                <tr>
-                                    <th  scope="col">Data</th>
-                                    <th scope="col">n pedido</th>
-                                    <th scope="col">status</th>
-                                    <th scope="col">valor</th>
+                    <div class="thumbnail thumb-boleto">
+                        <i class=" icon-size fas fa-barcode"></i>
+                        <p> Segunda <b>via Boleto</b></p>
+                    </div>
+                    <div class="thumbnail thumb-entrega">
+                        <i class=" icon-size fas fa-box"></i>
+                        <p>Status <b>da entrega</b></p>
+                    </div>
+                </section>
+                <!-- fim cards -->s
+                <section class="table-responsive">
+                    <table class="table table-striped table-bordered text-uppercase">
+                        <caption>MEUS PEDIDOS</caption>
+                        <thead>
+                            <!-- <tr>
+                                <td class="tablee"><h3>meus pedidos</h3></td>
+                            </tr> -->
+                            <tr>
+                                <th  scope="col">Data</th>
+                                <th scope="col">n pedido</th>
+                                <th scope="col">status</th>
+                                <th scope="col">valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">24/09/2017</th>
+                                    <td>09876432/001</td>
+                                    <td class="text-danger">em transito</td>
+                                    <td>R$455.67</td>
                                 </tr>
-                            </thead>
-                            <tbody>
                                 <tr>
                                     <td scope="row">24/09/2017</th>
                                         <td>09876432/001</td>
@@ -126,41 +146,33 @@
                                     <tr>
                                         <td scope="row">24/09/2017</th>
                                             <td>09876432/001</td>
-                                            <td class="text-danger">em transito</td>
+                                            <td class="text-success">entregue</td>
                                             <td>R$455.67</td>
                                         </tr>
-                                        <tr>
-                                            <td scope="row">24/09/2017</th>
-                                                <td>09876432/001</td>
-                                                <td class="text-success">entregue</td>
-                                                <td>R$455.67</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!-- fim dos cards -->
-                        </div>
-                        <!-- fim coluna1--> 
-                        <!--  coluna2-->
-                        <div class="col-md-4  text-uppercase">
-                               <div class="parcerias-area parceria-campo">
-
-
-                               </div>
-                            
-                            <i class="fas fa-puzzle-piece"></i>
+                        </section>
+                    </section>
+                    
+                    
+                    <section class="col-md-4  text-uppercase parcerias-area parceria-campo"> 
+                        
+                        <div class="parceria-content">
+                            <i class=" puzzle2 fas fa-puzzle-piece"></i>
+                            <i class=" puzzle fas fa-puzzle-piece"></i>
                             <p> parcerias menu 
                                 <br/>
                                 <b> para o meu negócio</b>
-                            </div>
-                            <!-- coluna2-->
-                        </a>
+                            </p>
                         </div>
-                        <!-- fim da linha2 -->
-                    </div>
-                </body>
-                </html>
-                
-
-                   
+                    </section>
+                </section>
+            </section>
+            
+            <!-- fim do dados-conta -->
+        </body>
+        </html>
+        
+        
+        

@@ -1,54 +1,23 @@
-.empresa-cad-form{
-    background-color: #263238;
-    color:white;
-    height:170px;
-}
 
-.cad-input{
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    height:11em;
 
-}
+
 .cad-dados-icone{
     font-size:60px;
 }
+
 #cad-icon-titulo{
     align-items: center;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 10em;
-    width:270px;
-
-}
-
-.bairro{
-    display:flex;
-}
-
-.dados-span-input{
-
-    background-color: white;
+    width:250px;
+   
 }
 
 
 
-.parceria-campo{
-border:0.1px solid orangered;
-}
 
-.icon-color{
-    color:#263238;
-}
-
-.dados-conta{
-    margin-top: 30px;
-}
-
-.icon-size{
-    font-size:40px;
-}
+/* cadastro */
 .cd-config{
     display: flex;
     justify-content: space-between;
@@ -62,15 +31,117 @@ border:0.1px solid orangered;
     height: 10em;
 }
 
+.empresa-cad-form{
+    background-color: #263238;
+    color:white;
+    height:170px;
+}
+
+.cad-input{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height:11em;
+}
+.bairro{
+  
+    display:flex;
+    border:2px solid green;
+}
+
+.email-input{
+    width:250px;
+}
+.tel-input{
+    width:250px;
+}
+.bairro-input1{
+    width:200px;
+}
+.bairro-input2{
+    width:100px;
+}
+.bairro-input3{
+    width:50px;
+}
+
+/* cards */
+.icon-color{
+    color:#263238;
+}
+.icon-size{
+    font-size:40px;
+}
+
+.dados-span-input{
+    background-color: white;
+}
+.conta-dados{
+    margin-top: 10px;
+}
+
+.img-barcode{
+    width: 200px;
+    height: 200px;
+}
+
+.conta-dados-info{
+    display:flex;
+    justify-content: space-between;
+
+}
+.thumb-credito{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width:150px;
+    height:100px;
+}
+.thumb-boleto{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width:150px;
+    height:100px;
+}
+.thumb-entrega{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width:150px;
+    height:100px;
+}
+/* tabela */
+/* parceria */
 .parcerias-area:hover{
     transform: scale(1.03);
 
 }
 .parcerias-area{
+    border:0.1px solid orangered;
     display: flex;
     align-items: center;
     justify-content: center;
     color:orangered;
     height:30em;
+}
+.puzzle2{
+    font-size: 50px;
+   
+}
+
+/* .puzzle2:hover{
+    transform: translateY(36%);
+} */
+.puzzle{
+    font-size: 50px;
+}
+.parceria-content{
+
+    border:2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
